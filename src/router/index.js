@@ -27,6 +27,17 @@ const routes = [
       },
     ],
   },
+  {
+    path: '/projects',
+    component: () => import('@/layouts/default/Default.vue'),
+    children: [
+      {
+        path: '',
+        name: 'Projects',
+        component: () => import(/* webpackChunkName: "home" */ '@/views/Project.vue'),
+      },
+    ],
+  },
 ]
 
 const router = createRouter({

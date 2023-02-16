@@ -24,6 +24,7 @@
 
 <script>
 export default {
+  name: "Experience",
   data() {
     return {
       items: [
@@ -51,7 +52,7 @@ export default {
         {
           job: "Desarrollador backend",
           company: "Mecahsoft",
-          duration: "Sep/2022 a hoy",
+          duration: "Sep/2022 hasta la actualidad",
           description:
             "Desarrollo de API en laravel, administrar base de datos SQL, gestionar nuevos requerimientos de software, apoyo al equipo frontend.",
         },

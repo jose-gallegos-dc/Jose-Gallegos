@@ -10,11 +10,7 @@
       <v-app-bar-title>José Gallegos</v-app-bar-title>
 
       <template v-slot:append v-if="breakpoint.mdAndUp">
-        <v-toolbar
-          color="transparent"
-          v-for="(item, i) in items"
-          :key="i"
-        >
+        <v-toolbar color="transparent" v-for="(item, i) in items" :key="i">
           <v-btn :to="item.to">
             <v-icon left class="pr-2">{{ item.icon }}</v-icon>
             {{ item.title }}
@@ -24,12 +20,19 @@
     </v-app-bar>
 
     <v-navigation-drawer v-model="drawer" temporary>
-      <v-list density="compact" nav v-for="(item, j) in items" :key="j">
+      <v-list>
         <v-list-item
-          :prepend-icon="item.icon"
-          :title="item.title"
+          active-color="indigo-darken-2"
+          v-for="(item, j) in items"
+          :key="j"
           :to="item.to"
         >
+          <template v-slot:prepend>
+            <v-icon>{{ item.icon }}</v-icon>
+          </template>
+          <v-list-item-title class="text-uppercase font-weight-medium">{{
+            item.title
+          }}</v-list-item-title>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
@@ -56,6 +59,11 @@ export default {
           icon: "mdi-account",
           title: "Acerca de mí",
           to: "/about-me",
+        },
+        {
+          icon: "mdi-xml",
+          title: "Mis proyectos",
+          to: "/projects",
         },
       ],
     };
