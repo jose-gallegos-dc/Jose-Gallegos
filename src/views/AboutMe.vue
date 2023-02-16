@@ -14,7 +14,7 @@
 
       <!-- Tarjeta de experiencia -->
       <v-col cols="12" md="5">
-        <h1>TERCER</h1>
+        <Experience />
       </v-col>
     </v-row>
   </v-container>
@@ -24,4 +24,5 @@
 import Information from "@/components/about_me/Information.vue";
 import Description from "@/components/about_me/Description.vue"
 import Formation from "@/components/about_me/Formation.vue"
+import Experience from "@/components/about_me/Experience.vue"
 </script>

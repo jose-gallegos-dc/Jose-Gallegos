@@ -1,5 +1,5 @@
 <template>
-  <v-card class="pa-4 mb-6 rounded-xl" elevation="10">
+  <v-card class="pa-4 mb-6 rounded-xl" elevation="6">
     <h3 class="pb-2">¿Quién soy?</h3>
     <p class="text-justify">
       Profesional creativo desde la concepción de tecnologías de la información.

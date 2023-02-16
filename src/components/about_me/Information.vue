@@ -1,5 +1,5 @@
 <template>
-  <v-card class="pa-4 rounded-xl" elevation="10">
+  <v-card class="pa-4 rounded-xl" elevation="6">
     <div class="text-center">
       <v-img
         height="150"

@@ -1,5 +1,5 @@
 <template>
-  <v-card class="pa-4 rounded-xl" elevation="10">
+  <v-card class="pa-4 rounded-xl" elevation="6">
     <h3 class="pb-2">Formación educativa</h3>
 
     <div class="d-flex pb-2">
@@ -13,51 +13,57 @@
     </div>
 
     <v-list>
-      <v-list-group value="Technologies" active-color="primary">
+      <v-list-group value="Technologies" active-color="indigo-darken-2">
         <template v-slot:activator="{ props }">
           <v-list-item
             v-bind="props"
             prepend-icon="mdi-head-cog-outline"
-            title="Tecnologías"
-          ></v-list-item>
+            class="font-weight-medium"
+          >
+          Tecnologías
+          </v-list-item>
         </template>
 
-        <v-list-group value="Backend" active-color="primary">
+        <v-list-group value="Backend" active-color="indigo-darken-2">
           <template v-slot:activator="{ props }">
             <v-list-item v-bind="props" title="Backend"></v-list-item>
           </template>
           <v-list-item
             v-for="([title, icon], i) in backend"
             :key="i"
-            :title="title"
-            :prepend-icon="icon"
-            class="d-flex justify-end"
+            class="justify-start"
           >
+            <v-icon class="mr-2">{{ icon }}</v-icon>
+            {{ title }}
           </v-list-item>
         </v-list-group>
 
-        <v-list-group value="Frontend" active-color="primary">
+        <v-list-group value="Frontend" active-color="indigo-darken-2">
           <template v-slot:activator="{ props }">
             <v-list-item v-bind="props" title="Frontend"></v-list-item>
           </template>
           <v-list-item
             v-for="([title, icon], j) in frontend"
             :key="j"
-            :title="title"
-            :prepend-icon="icon"
-          ></v-list-item>
+            class="justify-start"
+          >
+            <v-icon class="mr-2">{{ icon }}</v-icon>
+            {{ title }}
+          </v-list-item>
         </v-list-group>
 
-        <v-list-group value="Others" active-color="primary">
+        <v-list-group value="Others" active-color="indigo-darken-2">
           <template v-slot:activator="{ props }">
             <v-list-item v-bind="props" title="Otras"></v-list-item>
           </template>
           <v-list-item
             v-for="([title, icon], k) in others"
             :key="k"
-            :title="title"
-            :prepend-icon="icon"
-          ></v-list-item>
+            class="justify-start"
+          >
+            <v-icon class="mr-2">{{ icon }}</v-icon>
+            {{ title }}
+          </v-list-item>
         </v-list-group>
       </v-list-group>
     </v-list>
