@@ -9,8 +9,6 @@
 
       <div class="py-14" />
 
-      <!-- <h1 v-if="breakpoint.smAndDown">Vue is awesome!</h1> -->
-
     </v-responsive>
   </v-container>
 </template>
@@ -18,12 +16,7 @@
 <script>
 export default {
   data() {
-    return {
-
-    }
+    return {};
   },
-  mounted() {
-    console.log(this.$vuetify.display.sm)
-  }
-}
+};
 </script>
