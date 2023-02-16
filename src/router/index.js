@@ -22,7 +22,7 @@ const routes = [
     children: [
       {
         path: '',
-        name: 'AboutMe',
+        name: 'about-me',
         component: () => import(/* webpackChunkName: "home" */ '@/views/AboutMe.vue'),
       },
     ],
