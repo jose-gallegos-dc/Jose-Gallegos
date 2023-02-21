@@ -5,8 +5,7 @@
       Profesional creativo desde la concepción de tecnologías de la información.
       Entre las aptitudes se incluyen implementar, desarrollar, innovar y
       gestionar aplicaciones computacionales para solucionar problemas de
-      diversos contextos, integrando diferentes tecnologías, plataformas o
-      dispositivos.
+      diversos contextos, integrando diferentes tecnologías.
     </p>
   </v-card>
 </template>

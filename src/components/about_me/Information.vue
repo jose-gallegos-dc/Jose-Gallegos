@@ -4,7 +4,7 @@
       <v-img
         height="150"
         width="150"
-        src="https://cdn.pixabay.com/photo/2014/04/02/10/25/man-303792_960_720.png"
+        src="/con-traje.png"
         class="mx-auto"
       ></v-img>
       <div class="pt-4">
@@ -27,6 +27,13 @@
       <div class="d-flex flex-column justify-content-end">
         <div class="font-weight-medium">Correo electrónico</div>
         <p class="text-body-2">jose.gallegos.delcarpio@gmail.com</p>
+      </div>
+    </div>
+    <div class="d-flex mb-3">
+      <v-icon class="mr-2 align-self-start">mdi-github</v-icon>
+      <div class="d-flex flex-column justify-content-end">
+        <div class="font-weight-medium">Github</div>
+        <p class="text-body-2">https://github.com/jose-gallegos-dc</p>
       </div>
     </div>
     <div class="d-flex mb-3">

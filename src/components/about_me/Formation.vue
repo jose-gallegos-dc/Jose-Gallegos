@@ -78,14 +78,26 @@ export default {
       backend: [
         ["PHP", "mdi-language-php"],
         ["Laravel", "mdi-laravel"],
+        ["MySQL", "mdi-dolphin"],
+        ["PostgreSQL", "mdi-elephant"],
+        ["NGINX", "mdi-nativescript"],
       ],
       frontend: [
         ["HTML5", "mdi-language-html5"],
         ["CSS3", "mdi-language-css3"],
+        ["JavaScript", "mdi-language-javascript"],
+        ["JSON", "mdi-code-json"],
+        ["VueJs", "mdi-vuejs"],
+        ["Vuetify", "mdi-vuetify"],
+        ["Tailwind", "mdi-tailwind"],
+        ["Bootstrap", "mdi-bootstrap"],
       ],
       others: [
         ["Git", "mdi-git"],
         ["Github", "mdi-github"],
+        ["Linux", "mdi-linux"],
+        ["Windows", "mdi-microsoft-windows"],
+        ["Fedora", "mdi-fedora"],
       ],
     };
   },
