@@ -3,7 +3,7 @@
     <v-row>
       <v-col v-for="(item, i) in items" :key="i" cols="12" md="6">
         <v-card class="mx-auto" min-width="344" elevation="10">
-          <v-img :src="`src/assets/${item.image}`" cover alt="project-image"></v-img>
+          <v-img src="@/assets/ecoycaos.png" cover alt="project-image"></v-img>
 
           <v-card-item>
             <v-card-title class="text-indigo">
