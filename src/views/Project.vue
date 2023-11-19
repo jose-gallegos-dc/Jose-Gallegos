@@ -3,7 +3,7 @@
     <v-row>
       <v-col v-for="(item, i) in items" :key="i" cols="12" md="6">
         <v-card class="mx-auto" min-width="344" elevation="10">
-          <v-img src="@/assets/ecoycaos.png" cover alt="project-image"></v-img>
+          <v-img :src="item.image" cover alt="project-image"></v-img>
 
           <v-card-item>
             <v-card-title class="text-indigo">
@@ -40,7 +40,7 @@ export default {
           name: "Eco y caos",
           repository: null,
           web: "https://ecoycaos.com.mx/",
-          image: "ecoycaos.png",
+          image: "/ecoycaos.png",
           description:
             "Solución integral para una tienda en línea especializada en ropa deportiva, que comprende la experiencia del cliente como la gestión administrativa. Desarrollada con Laravel 10, jQuery, Bootstrap 5 y MySQL, con una interfaz moderna y dinámica para la adquisición de artículos deportivos. Integrando pagos seguros con la plataforma de Mercado Pago. Una aplicación sólida que garantiza una atractiva experiencia de usuario y facilita un flujo de trabajo eficaz para la administración de la tienda.",
         },
@@ -48,7 +48,7 @@ export default {
           name: "Textil Quality Moda",
           repository: null,
           web: "https://www.textilqualitymoda.com.mx/",
-          image: "textilqualitymoda.png",
+          image: "/textilqualitymoda.png",
           description:
             "Plataforma integral para una tienda de ropa femenina que engloba tanto la experiencia del cliente como la gestión administrativa. Desarrollada con Laravel 8, JavaScript, Bootstrap 4 y MySQL, ofrece una experiencia completa de compra. Además, cuenta con integraciones para envíos ágiles y seguros de envíos perros, y pagos mediante la plataforma de Mercado Pago. Una solución robusta que garantiza una experiencia fluida y segura tanto para los usuarios como para la gestión interna.",
         },
@@ -56,7 +56,7 @@ export default {
           name: "Aryy API",
           repository: "https://github.com/jose-gallegos-dc/aryy-api",
           web: null,
-          image: "aryy.png",
+          image: "/aryy.png",
           description:
             "API destinada a la gestión eficiente de citas médicas y expedientes de pacientes. Desarrollada con Laravel 9, JSON, MySQL y alojada en AWS, proporcionando una infraestructura robusta. Integrando el consumo de API con Vue 2 y Vuetify 2, con una interfaz interactiva y moderna para facilitar la visualización y gestión de datos médicos. Agilizando los procesos médicos y mejora la experiencia tanto para profesionales de la salud como para los pacientes.",
         },
